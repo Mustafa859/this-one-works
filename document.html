@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            display: block;
+            text-align: center;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+        button{
+            height: 50px;
+            width: 200px;
+            color: burlywood;
+            background-color: darkred;
+            border: darkred;
+            border-radius: 30px;
+            display: block;
+        }
+        button:active{
+            box-shadow: 4px 4px 4px burlywood;
+        }
+        .savebutton{
+            background-color: black;
+            color: white;
+        }
+        p{
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="clickthis">0</h1>
+    <div>
+    <button onclick="increment()">click this</button>
+</div>
+<div>
+    <button class="savebutton" onclick="save()">save</button>
+    
+</div>
+<p id="save-id">previous entries</p>
+
+    <script src="js.js">
+
+
+    </script>
+</body>
+</html>
